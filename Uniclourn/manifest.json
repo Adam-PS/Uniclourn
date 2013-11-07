@@ -4,12 +4,14 @@
   "name": "Uniclourn",
   "description": "Replace all instances of the word cloud on a web page with unicorn",
   "version": "1.0",
-
-  "browser_action": {
-    "default_icon": "icon.png",
-    "default_popup": "popup.html"
-  },
   "permissions": [
-    "https://secure.flickr.com/"
-  ]
+    "activeTab"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_title": "Make this page red"
+  }
 }
