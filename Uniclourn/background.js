@@ -4,5 +4,3 @@ chrome.browserAction.onClicked.addListener(function (tab) {
 		file: "cloud_replace.js"
 	});
 });
-
-// code: 'document.body.innerHTML = document.body.innerHTML.replace(new RegExp(/cloud/gi), "unicorn")'
